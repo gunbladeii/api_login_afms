@@ -20,7 +20,7 @@ if($userName == '' || $userID == '' || $userPassword == ''){
 	if(isset($recordExists)){
 		echo 'User already exists';
 	}else{
-		$query = "INSERT INTO login (name, username, password) VALUES ('$userName', '$userID', '$userPassword')";
+		$query = "INSERT INTO login (nama, username, password) VALUES ('$userName', '$userID', '$userPassword')";
 		if(mysqli_query($con, $query)){
 			echo 'User registered successfully';
 		}else{
