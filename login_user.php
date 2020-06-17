@@ -1,9 +1,9 @@
 <?php
 
 define('HOST', 'localhost');
-define('USER', 'atif');
-define('PASSWORD', 'naseem');
-define('DB', 'trices');
+define('USER', 'gunbladeii');
+define('PASSWORD', 'Sh@ti5620');
+define('DB', 'afms');
 
 
 
@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	
 	$con = mysqli_connect(HOST, USER, PASSWORD, DB) or die("Unable to Connect");
 	
-	$query = "SELECT * FROM users WHERE email = '$userID' AND password = '$userPassword'";
+	$query = "SELECT * FROM login WHERE username = '$userID' AND password = '$userPassword'";
 	$result = mysqli_query($con, $query);
 	$data = mysqli_fetch_array($result);
 

@@ -2,9 +2,9 @@
 
 
 define('HOST', 'localhost');
-define('USER', 'atif');
-define('PASSWORD', 'naseem');
-define('DB', 'trices');
+define('USER', 'gunbladeii');
+define('PASSWORD', 'Sh@ti5620');
+define('DB', 'afms');
 
 
 $con = mysqli_connect(HOST, USER, PASSWORD, DB) or die("Unable to Connect");
